@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="ZIP File Extractor">
+     <div class="slds-flex_container">  
+        <div class="slds-m-around_medium slds-flex_item">
+            <lightning-button label="use jszip" onclick={handleExtract}></lightning-button>
+        </div>
+        <div if:true={showButton} class="slds-m-around_medium slds-flex_item">
+            <lightning-button label="use zipper" onclick={saveBlob}></lightning-button>
+        </div>
+    </div>  
+    </lightning-card>
+  </template>
+  
